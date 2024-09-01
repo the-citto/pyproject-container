@@ -1,24 +1,32 @@
-# pyproject-base
+# pyproject-container
 
-follow [Creating a repository from a template](https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-repository-from-a-template)
-
-_GitHub CLI snippets coming soon_
+setup for python Flask development with Podman (same as Docker)
 
 #
 
-rename folder `python/pyproject_base/` to `python/<new-project-name>`
+run `make` for a list most relevant recipes (waiting for the `--print-targets` option to work?)
+
 #
+
+create a python virtual environment with the same python version as for the container
+
+the `.venv` is created only for the LSPs to work, the project's folder is mounted in the container
+
+
+
+#
+
+rename folder `python/pyproject_container/` to `python/<new-project-name>`
+
+#
+
 in `pyproject.toml`
- - amend occurencies of `pyproject_base`
+ - amend occurencies of `pyproject_container`
  - amend metadata
     - version of `requires-python`
     - `authors`
     - `classifiers`
  - verify LSPs and linters settings
-#
-amend 
-#
-verify python version in `Makefile`
 #
 amend `README.md` and `LICENSE`
 #

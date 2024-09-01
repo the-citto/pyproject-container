@@ -1,4 +1,4 @@
 """Vars."""
 
-WELCOME_TEXT = "<h1>Hello, World!</h1>"
+WELCOME_TEXT = "<h2>Hello, World!</h2>"
 

@@ -6,7 +6,7 @@
 .PHONY: req-tests
 
 .PHONY: is-host
-.PHONY: build
+.PHONY: build-dev
 .PHONY: run-dev
 .PHONY: prune
 .PHONY: prune-all
@@ -27,7 +27,7 @@ all:
 	@echo req-tests
 	@echo ""
 	@echo podman/docker:
-	@echo build
+	@echo build-dev
 	@echo run-dev
 	@echo prune
 	@echo prune-all
@@ -81,7 +81,7 @@ run-dev: is-host
 			pip install --root-user-action=ignore -e .[dev] ;\
 			bash"
 
-build: is-host
+build-dev: is-host
 	podman build --tag $(BASENAME) .
 
 prune: is-host
@@ -104,7 +104,7 @@ requirements-dev.txt: pyproject.toml
 
 req-dev: all-requirements
 	python -m piptools sync requirements-dev.txt
-	python -m pip install -e .[dev]
+	python -m pip install --root-user-action=ignore -e .[dev]
 
 
 requirements-tests.txt: pyproject.toml
@@ -115,7 +115,7 @@ req-tests: all-requirements
 
 
 update: is-container
-	python -m pip install --upgrade pip pip-tools
+	python -m pip install --root-user-action=ignore --upgrade pip pip-tools
 
 
 all-requirements: update requirements.txt requirements-tests.txt requirements-dev.txt 
