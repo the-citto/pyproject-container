@@ -14,3 +14,12 @@ amend `pyproject.toml`
 #
 amend `README.md` and `LICENSE`
 #
+
+## TODOs
+
+in `Makefile`, move management of `requirements*.txt` files to host (now on container)
+
+test and production images, possibly with `docker-compose`
+
+
+
