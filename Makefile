@@ -77,8 +77,8 @@ run-dev: is-host
 		$(BASENAME) \
 		sh -i -c "\
 			pip install --root-user-action=ignore --upgrade pip pip-tools ;\
-			piptools sync requirements-dev.txt ;\
-			pip install --root-user-action=ignore -e .[dev] ;\
+			pip-sync requirements-dev.txt ;\
+			pip install --root-user-action=ignore -e . ;\
 			bash"
 
 build-dev: is-host
