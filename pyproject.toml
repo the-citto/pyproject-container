@@ -24,9 +24,13 @@ classifiers = [
 ]
 
 [project.optional-dependencies]
-tests = ["pytest"]
-dev = [
+tests = [
+    "mypy",
     "pytest",
+    "ruff",
+    "pyright",
+]
+dev = [
     "ipython",
 ]
 

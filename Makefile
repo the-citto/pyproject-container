@@ -100,7 +100,8 @@ req: all-requirements
 
 
 requirements-dev.txt: pyproject.toml
-	python -m piptools compile --extra dev -o requirements-dev.txt pyproject.toml
+	python -m piptools compile --extra=dev --extra=tests --output-file=requirements-dev.txt pyproject.toml
+
 
 req-dev: all-requirements
 	python -m piptools sync requirements-dev.txt
