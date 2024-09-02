@@ -1,6 +1,9 @@
 # pyproject-container
 
 setup for python Flask development with Podman (same as Docker)
+
+same approach should be straightforward for replacing `Flask` with [`Quart`](https://quart.palletsprojects.com/en/latest/) or `FastAPI`
+
 #
 run `make` for a list most relevant recipes (waiting for the `--print-targets` option to work?)
 #
