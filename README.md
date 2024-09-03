@@ -10,6 +10,9 @@ run `make` for a list most relevant recipes (waiting for the `--print-targets` o
 create a python virtual environment with the same python version as for the container
 
 the `.venv` is created only for the LSPs to work, the project's folder is mounted in the container
+
+**required:** `pyenv` to set up the `.venv` with the same python version as in the container
+
 #
 rename folder `python/pyproject_container/` to `python/<new-project-name>`
 #
