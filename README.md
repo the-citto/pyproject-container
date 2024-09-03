@@ -13,6 +13,7 @@ the `.venv` is created only for the LSPs to work, the project's folder is mounte
 
 **required:** `pyenv` to set up the `.venv` with the same python version as in the container
 
+the same approach will be with `nvm` for `node` versions, `rustup` for `rust`, etc.
 #
 rename folder `python/pyproject_container/` to `python/<new-project-name>`
 #
