@@ -14,6 +14,8 @@ the `.venv` is created only for the LSPs to work, the project's folder is mounte
 **required:** `pyenv` to set up the `.venv` with the same python version as in the container
 
 the same approach will be with `nvm` for `node` versions, `rustup` for `rust`, etc. (well, there's no virtual enviroments with those, but...)
+
+_Note for future me: when time comes, explore feasibility of setting up ad-hoc container just for dependencies, likely with ad-hoc_ `.config/nvim`
 #
 rename folder `python/pyproject_container/` to `python/<new-project-name>`
 #
