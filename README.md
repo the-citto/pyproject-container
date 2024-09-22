@@ -5,9 +5,9 @@ setup for python Flask development with Podman (same as Docker)
 same approach should be straightforward for replacing `Flask` with [`Quart`](https://quart.palletsprojects.com/en/latest/) or `FastAPI`
 
 #
-run `make` for a list most relevant recipes (waiting for the `--print-targets` option to work?)
+run `make` for a list of most relevant recipes (consider using `--print-targets`, but likely it works for non-dummy targets)
 #
-create a python virtual environment with the same python version as for the container
+create locally a python virtual environment with the same python version as for the container
 
 the `.venv` is created only for the LSPs to work, the project's folder is mounted in the container
 
