@@ -13,7 +13,7 @@ the `.venv` is created only for the LSPs to work, the project's folder is mounte
 
 **required:** `pyenv` to set up the `.venv` with the same python version as in the container
 
-changes to the `requirements.txt` files can be done lo9cally, but the `Makefile` has recipies to do it from the container - keep the local `.venv` updated 
+changes to the `requirements.txt` files can be done locally, but the `Makefile` has recipies to do it from the container - keep the local `.venv` updated 
 #
 similar approach will be with `nvm` for `node` versions, `rustup` for `rust`, etc. (well, there's no virtual enviroments with those, but...)
 
